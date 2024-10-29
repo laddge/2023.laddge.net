@@ -212,3 +212,12 @@ ssh-copy-id -i ~/.ssh/id_ed25519.pub ced
 ```
 
 以上で、solと同じようにVSCodeからcedのファイルを編集できるようになるはずです。
+
+### 2024-10-29追記
+cedの設定で`orange01.ced.cei.uec.ac.jp`としていますが、`orange01`が落ちている場合があるので、そのときは他の番号を選択してください
+
+![ced monitor](../../assets/ced_monitor.png)
+
+↑このように以下のサイトで確認できます。
+
+http://jr3.cs.uec.ac.jp/23/materials/monitor.html
