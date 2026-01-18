@@ -34,10 +34,7 @@ const fetchData = async () => {
     headers: { Authorization: 'Bearer 072114f0c0c2cb62d76729b19dba8ce6534cc3dd' },
   })
   for (const item of qRes.data) {
-    const meta = (await JSDOM.fromURL(item.url)).window.document.querySelector(
-      'meta[property="og:image"]'
-    ) as HTMLMetaElement
-    const image = meta ? meta.content : ''
+    const image = `https://qiita-ogimage.dev-laddge.workers.dev/laddge/${item.id}`
 
     articles.push({
       slug: item.id,
